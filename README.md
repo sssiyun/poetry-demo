@@ -1,12 +1,12 @@
 # poetry-demo
 This is a template repository for Python projects that use Poetry for the dependency management.
 
-To get more detailed instruction, you could refer to [poetry's documention](https://python-poetry.org/docs/basic-usage/)
+For more detailed instructions, please refer to the [poetry's documention](https://python-poetry.org/docs/basic-usage/)
 
 # Getting Started
 Before started, ensure you have met the following requirements:
 - Python 3.x installed
-- Poetry installed (You could install poetry by  ```pip install poetry```)
+- Poetry installed (You can install poetry using  ```pip install poetry```)
 
 ## Initiation
 To create a new project:
@@ -23,13 +23,13 @@ Your-Project-Name
 └── tests
     └── __init__.py
 ```
-Or you could initiate into a pre-existing project
+Alternatively, you can initialize Poetry in an existing project:
 ```
 poetry init
 ```
-It will create a ```pyproject.toml``` file that you could add the dependencies you needed.
+This will create a ```pyproject.toml``` file, where you can specify the dependencies your project requires.
 
-For more specification of the dependency, you could visit [poetry's dependency specification](https://python-poetry.org/docs/dependency-specification/).
+For detailed information on specifying dependencies, you can visit the [poetry's dependency specification](https://python-poetry.org/docs/dependency-specification/).
 
 ## Installation
 To install the defined dependencies in ```pyproject.toml``` for your project, just run
@@ -43,13 +43,11 @@ It will create a ```poetry.lock``` file, which resolves and installs all depende
 Note that Poetry uses the exact versions listed in ```poetry.lock``` to ensure that the package versions are consistent for everyone working on the project.
 
 ## Update
-If you need to add new dependencies or modify their version, you'll need to go to ```pyproject.toml``` for the modification. Then you need to run
+To add new dependencies or update existing versions, modify your ```pyproject.toml``` file accordingly. After making changes, execute:
 ```
 poetry update
 ```
-to update ```poetry.lock```
-
-This will fetch the latest matching versions (according to your ```pyproject.toml``` ) and update the lock file with the new versions.
+This command updates the ```poetry.lock```, fetching the latest compatible versions as specified in your pyproject.toml, and ensures the lock file reflects these new versions.
 
 ## Usage
 Here's a quick example of how to run a script using Poetry:
@@ -60,11 +58,11 @@ poetry run python your_script.py
 # Example
 Here's the example demo to run the project.
 
-Firstly, install dependencies
+First, install the required dependencies:
 ```
 poetry install
 ```
-Then run the demo script
+Next, execute the demo script:
 ```
 poetry run python demo/demo.py
 ```
