@@ -9,9 +9,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+packaging = "^24.1"
 requests = "^2.26.0"
 pandas = "*"
-matplotlib = "*"
 
 
 [build-system]
