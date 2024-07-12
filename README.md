@@ -1,5 +1,6 @@
 # poetry-demo
 test
+test
 This is a template repository for Python projects that use Poetry for the dependency management.
 
 For more detailed instructions, please refer to the [poetry's documention](https://python-poetry.org/docs/basic-usage/)
